@@ -39,7 +39,7 @@ val_num = total_data_num - train_num - test_num
 
 #create annotation_train.txt
 with open("annotation.txt") as in_f, open("annotation_train.txt", 'w') as out_f1, \
-    open("annotation_test.txt", 'w') as out_f2, open("annotation_val", 'w') as out_f3:
+    open("annotation_test.txt", 'w') as out_f2, open("annotation_val.txt", 'w') as out_f3:
     shuffled_data = [ (random.random(), line) for line in in_f ]
     shuffled_data.sort()
     count = 0
